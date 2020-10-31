@@ -1,9 +1,9 @@
 package medium
 
-import ListNode
+import common.ListNode
 
 
-class Q2 {
+object Q2 {
     fun addTwoNumbers(l1: ListNode?, l2: ListNode?) : ListNode? {
         val node = ListNode(0)
         var list1 = l1

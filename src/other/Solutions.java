@@ -1,5 +1,7 @@
 package other;
 
+import common.ListNode;
+
 public class Solutions {
     private static char c = 'A';
     private static int i = 0;
@@ -34,5 +36,29 @@ public class Solutions {
         t1.start();
         t2.start();
         t3.start();
+    }
+
+    /**
+     * 如何判断一个链有环，请找出该链表的环的入口结点，否则输出null
+     */
+    public static ListNode EntryNodeOfLoop(ListNode pHead){
+        if (pHead == null || pHead.next == null) return null;
+        ListNode p1 = pHead;
+        ListNode p2 = pHead;
+        while(p2 != null && p2.next != null) {
+            p1 = p1.next;
+            p2 = p2.next.next;
+            if(p1 == p2){
+                p2 = pHead;
+                while(p1 != p2){
+                    p1 = p1.next;
+                    p2 = p2.next;
+                }
+                if(p1 == p2){
+                    return p1;//p1和p2相遇点正好是环的入口点
+                }
+            }
+        }
+        return null;
     }
 }

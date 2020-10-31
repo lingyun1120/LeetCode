@@ -1,4 +1,4 @@
 package medium
 
-class Q3 {
+object Q3 {
 }
