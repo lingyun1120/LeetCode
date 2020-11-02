@@ -1,0 +1,4 @@
+package hard
+
+object SolutionsK {
+}

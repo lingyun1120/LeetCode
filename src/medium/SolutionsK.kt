@@ -2,9 +2,8 @@ package medium
 
 import common.ListNode
 
-
-object Q2 {
-    fun addTwoNumbers(l1: ListNode?, l2: ListNode?) : ListNode? {
+object SolutionsK {
+    fun addTwoNumbers(l1: ListNode?, l2: ListNode?): ListNode? {
         val node = ListNode(0)
         var list1 = l1
         var list2 = l2
