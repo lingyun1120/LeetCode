@@ -2,6 +2,8 @@ package medium;
 
 import common.ListNode;
 
+import java.util.HashMap;
+
 public class Solutions {
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode n1 = l1, n2 = l2;
@@ -108,6 +110,38 @@ public class Solutions {
             sb.append(chars[j]);
         }
 
+        return sb.toString();
+    }
+
+    public static int maxArea(int[] height) {
+        int len = height.length;
+        int area = 0;
+        int l = 0, r = len - 1;
+        while (l < r) {
+            int h = Math.min(height[l], height[r]);
+            area = Math.max(area, (r - l) * h);
+            if (height[l] < height[r]) {
+                l++;
+            } else {
+                r--;
+            }
+        }
+        return area;
+    }
+
+    public static String intToRoman(int num) {
+        int[] nums = new int[]{1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+        String[] romans = new String[] {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+        StringBuilder sb = new StringBuilder();
+        int i = 0;
+        while (num > 0) {
+            if (num - nums[i] >= 0) {
+                sb.append(romans[i]);
+                num = num - nums[i];
+            } else {
+                i++;
+            }
+        }
         return sb.toString();
     }
 }

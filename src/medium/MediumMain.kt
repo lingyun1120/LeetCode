@@ -1,6 +1,6 @@
 package medium
 
 fun main() {
-    val len = Solutions.zConvert("AB", 4)
+    val len = Solutions.intToRoman(1994)
     print("---> $len")
 }
