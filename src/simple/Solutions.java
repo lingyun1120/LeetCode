@@ -1,5 +1,7 @@
 package simple;
 
+import common.ListNode;
+
 import java.util.HashMap;
 import java.util.Map;
 
