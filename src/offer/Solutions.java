@@ -4,7 +4,9 @@ import common.ListNode;
 import common.TreeNode;
 import common.Util;
 
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 /**
  * 剑指offer
@@ -334,10 +336,10 @@ public class Solutions {
         if (A == null || B == null) {
             return false;
         }
-        return helper(A, B) || isSubStructure(A.left, B) || isSubStructure(A.right, B);
+        return subTreeHelper(A, B) || isSubStructure(A.left, B) || isSubStructure(A.right, B);
     }
 
-    private static boolean helper(TreeNode a, TreeNode b) {
+    private static boolean subTreeHelper(TreeNode a, TreeNode b) {
         System.out.println("---> helper A " + (a == null ? "null" : a.val));
         System.out.println("---> helper B " + (b == null ? "null" : b.val));
         if (b == null) {
@@ -346,6 +348,6 @@ public class Solutions {
         if (a == null) {
             return false;
         }
-        return a.val == b.val && helper(a.left, b.left) && helper(a.right, b.right);
+        return a.val == b.val && subTreeHelper(a.left, b.left) && subTreeHelper(a.right, b.right);
     }
 }

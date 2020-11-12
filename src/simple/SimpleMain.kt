@@ -13,6 +13,6 @@ fun main() {
     node2.next = node3
     node3.next = node4
     node4.next = node5
-    val ret = Util.reverseList(node1)
+    val ret = ListNode.reverseList(node1)
     print("---> $ret")
 }
