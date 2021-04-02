@@ -1,4 +1,4 @@
-package medium
+package leetcode.medium
 
 fun main() {
     val len = Solutions.intToRoman(1994)

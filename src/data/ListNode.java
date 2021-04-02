@@ -1,4 +1,4 @@
-package common;
+package data;
 
 public class ListNode {
     public int val;

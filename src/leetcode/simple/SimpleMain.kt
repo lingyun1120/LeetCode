@@ -1,7 +1,6 @@
-package simple
+package leetcode.simple
 
-import common.ListNode
-import common.Util
+import data.ListNode
 
 fun main() {
     val node1 = ListNode(1)

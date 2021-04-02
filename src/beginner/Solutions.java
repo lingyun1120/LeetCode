@@ -1,4 +1,5 @@
-package hard;
+package beginner;
 
 public class Solutions {
+
 }

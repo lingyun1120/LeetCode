@@ -1,6 +1,4 @@
-package simple;
-
-import common.ListNode;
+package leetcode.simple;
 
 import java.util.HashMap;
 import java.util.Map;

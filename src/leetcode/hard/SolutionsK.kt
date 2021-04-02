@@ -1,4 +1,4 @@
-package hard
+package leetcode.hard
 
 object SolutionsK {
 }

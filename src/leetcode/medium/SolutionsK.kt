@@ -1,6 +1,6 @@
-package medium
+package leetcode.medium
 
-import common.ListNode
+import data.ListNode
 
 object SolutionsK {
     fun addTwoNumbers(l1: ListNode?, l2: ListNode?): ListNode? {

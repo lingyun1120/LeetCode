@@ -1,17 +1,38 @@
 package offer;
 
-import common.ListNode;
-import common.TreeNode;
-import common.Util;
+import data.ListNode;
+import data.TreeNode;
+import data.Util;
 
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
 
 /**
  * 剑指offer
  */
 public class Solutions {
+    // 02
+    public boolean findNumberIn2DArray(int[][] matrix, int target) {
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
+            return false;
+        }
+        int n = matrix.length;
+        int m = matrix[0].length;
+        int i = 0;
+        int j = m - 1;
+        while (i < n && j >= 0) {
+            int v = matrix[i][j];
+            if (v == target) {
+                return true;
+            }
+            if (v > target) {
+                j--;
+            } else {
+                i++;
+            }
+        }
+        return false;
+    }
+
     //剑指offer 03
     public static int findRepeatNumber(int[] nums) {
         int temp;

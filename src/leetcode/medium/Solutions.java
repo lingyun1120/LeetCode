@@ -1,8 +1,6 @@
-package medium;
+package leetcode.medium;
 
-import common.ListNode;
-
-import java.util.HashMap;
+import data.ListNode;
 
 public class Solutions {
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {

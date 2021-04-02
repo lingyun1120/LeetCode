@@ -1,6 +1,6 @@
 package offer;
 
-import common.TreeNode;
+import data.TreeNode;
 
 public class Q28 {
     /**

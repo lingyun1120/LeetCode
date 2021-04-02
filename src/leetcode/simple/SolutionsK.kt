@@ -1,4 +1,4 @@
-package simple
+package leetcode.simple
 
 object SolutionsK {
     fun twoSum(nums: IntArray, target: Int): IntArray? {

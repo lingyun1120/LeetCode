@@ -1,4 +1,4 @@
-package common;
+package data;
 
 public class Util {
     public static void printList(ListNode head) {
